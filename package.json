@@ -1,6 +1,7 @@
 {
   "name": "chromaflow",
   "version": "1.0.0",
+  "type": "module",
   "private": false,
   "description": "Privacy-first gradient studio that extracts perceptual color palettes from images.",
   "license": "MIT",

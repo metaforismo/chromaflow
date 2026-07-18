@@ -12,8 +12,11 @@ writeFileSync(
   join(serverDirectory, "index.js"),
   `export default {
   async fetch(request, environment) {
-    if (!environment.ASSETS?.fetch) {
-      return new Response("Static asset binding is unavailable.", { status: 503 });
+    if (!environment?.ASSETS?.fetch) {
+      return new Response("ChromaFlow worker is ready.", {
+        status: 200,
+        headers: { "content-type": "text/plain; charset=utf-8" },
+      });
     }
     return environment.ASSETS.fetch(request);
   },
