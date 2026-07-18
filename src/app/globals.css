@@ -54,6 +54,15 @@ select:focus-visible,
 input[type="range"] {
   accent-color: #b85635;
 }
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+}
 ::selection {
   background: #d8a07c;
   color: #22231f;
