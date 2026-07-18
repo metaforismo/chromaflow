@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://chromaflow.francescogiannicola1.chatgpt.site"),
   title: { default: "ChromaFlow — Image to gradient studio", template: "%s — ChromaFlow" },
   description:
     "Extract perceptual color palettes from images and turn them into editable, export-ready gradients. Your images never leave your browser.",
